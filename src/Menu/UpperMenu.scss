@@ -1,0 +1,57 @@
+$colorMorado: #1E1131;
+$colorRosa: #F73554;
+
+.menu {
+    justify-content: space-around;
+    width: 100%;
+    font-size: 13px;
+
+    & div {
+        cursor: pointer;
+    }
+
+    & .menuIcons {
+        margin-right: 14px;
+
+        @media screen and (max-width:'767px') {
+            display: none;
+        }
+    }
+
+    & .menuSelected {
+        color: $colorRosa;
+        font-weight: bold;
+        padding-bottom: 3px;
+    }
+
+    & .underline {
+        height: 8px;
+        background-color: $colorRosa;
+        animation: underlineAnimation 1s;
+    }
+
+    .idiomasSelected {
+        width: 25px;
+        margin: 0 5px;
+        border: 2px solid white;
+        border-radius: 20px;
+    }
+    .idiomas{
+        width: 22px;
+        margin: 0 5px;
+    }
+
+    @keyframes underlineAnimation {
+        0% {
+            width: 0%;
+        }
+
+        50% {
+            width: 120%;
+        }
+
+        100% {
+            width: 100%;
+        }
+    }
+}

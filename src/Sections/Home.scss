@@ -1,0 +1,207 @@
+$colorMorado: #1E1131;
+$colorRosa: #F73554;
+$colorNaranja: #ffb510;
+
+.container {
+    & .backgroundHome {
+        & img {
+            width: 70%;
+            opacity: 0.1;
+            position: absolute;
+            right: 0;
+            animation: backgroundImg 3s;
+            top: 10px;
+        }
+    }
+
+    & .box {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+
+        .title {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            padding: 0;
+
+            .block {
+                width: 0%;
+                height: inherit;
+                background: $colorNaranja;
+                position: absolute;
+                animation: mainBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
+            }
+
+
+
+            h1 {
+                font-family: 'Poppins';
+                color: #fff;
+                font-size: 4rem;
+                -webkit-animation: mainFadeIn 2s forwards;
+                -o-animation: mainFadeIn 2s forwards;
+                animation: mainFadeIn 2s forwards;
+                animation-delay: 1.6s;
+                opacity: 0;
+                display: flex;
+                align-items: baseline;
+                position: relative;
+                margin-bottom: 0px;
+
+                 @media screen and (max-width:'864px') {
+                     font-size: 50px;
+                 }
+
+                span {
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    border-radius: 50%;
+                    background: $colorNaranja;
+                    -webkit-animation: load 0.6s cubic-bezier(.74, .06, .4, .92) forwards;
+                    animation: popIn 0.8s cubic-bezier(.74, .06, .4, .92) forwards;
+                    animation-delay: 2s;
+                    position: absolute;
+                    bottom: 13px;
+                    right: -31px;
+                    padding: 0.7rem;
+
+                    @media screen and (min-width: '501px') and (max-width: '745px') {
+                        display:none;
+                    }
+                    
+                    @media screen and (min-width: '381px') and (max-width: '500px') {
+                        right: 0px;
+                        padding: 9px;
+                    }
+
+                    @media screen and(max-width: '380px') {
+                        right: -30px;
+                        padding: 7px;
+                    }
+                }
+            }
+        }
+
+        .role {
+            width: 100%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            height: 100%;
+            padding: 0;
+
+            .block {
+                width: 0%;
+                height: inherit;
+                background: $colorRosa;
+                position: absolute;
+                animation: secBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
+                animation-delay: 2s;
+                display: flex;
+            }
+
+            p {
+                animation: secFadeIn 2s forwards;
+                animation-delay: 3.2s;
+                opacity: 0;
+                font-weight: bold;
+                font-family: 'Lato';
+                color: $colorRosa;
+                font-size: 14px;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+            }
+        }
+    }
+}
+
+@keyframes backgroundImg {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.1;
+    }
+}
+
+@keyframes mainBlock {
+    0% {
+        width: 0%;
+        left: 0;
+    }
+
+    50% {
+        width: 100%;
+        left: 0;
+    }
+
+    100% {
+        width: 0;
+        left: 100%;
+    }
+}
+
+@keyframes secBlock {
+    0% {
+        width: 0%;
+        right: 0;
+    }
+
+    50% {
+        width: 100%;
+        right: 0;
+    }
+
+    100% {
+        width: 0;
+        right: 100%;
+    }
+}
+
+@keyframes mainFadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes popIn {
+    0% {
+        background: $colorNaranja;
+        opacity: 0;
+    }
+
+    50% {
+        background: $colorNaranja;
+        opacity: 1;
+        bottom: 45px;
+    }
+
+    65% {
+        bottom: 0px;
+    }
+
+    80% {
+        bottom: 20px
+    }
+
+    100% {
+        background: $colorNaranja;
+        bottom: 13px;
+    }
+}
+
+@keyframes secFadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

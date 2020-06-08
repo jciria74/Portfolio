@@ -1,0 +1,51 @@
+$colorMorado: #1E1131;
+$colorRosa: #F73554;
+
+.menuCirculos {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+
+    @media screen and(max-width: '767px') {
+        display: none;
+    }
+
+
+    & .circle {
+        width: 1.5rem;
+        height: 1.5rem;
+        border: 1px solid white;
+        border-radius: 20px;
+        margin: 2rem 0;
+        cursor: pointer;
+
+        & .innerCircle {
+            width: 0.7rem;
+            height: 0.7rem;
+            background-color: $colorRosa;
+            border-radius: 20px;
+            animation: innerCircleAnimation 0.5s;
+        }
+
+        @keyframes innerCircleAnimation {
+            0% {
+                opacity: 0;
+                height: 0%;
+                width: 0%;
+            }
+
+            50% {
+                opacity: 0.5;
+                height: 120%;
+                width: 100%;
+            }
+
+            100% {
+                opacity: 1;
+                height: 1rem;
+                width: 1rem;
+            }
+        }
+    }
+}

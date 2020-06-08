@@ -1,0 +1,110 @@
+$colorRosa: #F73554;
+
+.Contact {
+    & .justifyCenter {
+        display: flex;
+        justify-content: center;
+    }
+
+    & .alignCenter {
+        display: flex;
+        align-items: center;
+    }
+
+    & .withoutMargin {
+        margin: 0 !important;
+    }
+
+    & .fotoContainer {
+        margin-bottom: 2rem;
+
+        & .foto {
+            width: 90%;
+
+            @media only screen and (min-width:'768px') and (max-width:'900px') {
+                width: 90%;
+            }
+
+            @media only screen and (min-width:'901px') and (max-width:'1024px') {
+                width: 70%;
+            }
+
+            @media only screen and (min-width:'1025px') {
+                width: 55%;
+            }
+        }
+    }
+
+    & .info {
+        padding: 0 0 0 3rem;
+
+        & .demo-typed {
+            color: white;
+            font-size: 16px;
+        }
+
+        & .name {
+            color: white;
+            font-family: 'Roboto',
+                sans-serif;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        & .infoDetail {
+            margin-top: 10px;
+
+            p {
+                margin: 0;
+                font-size: 14px;
+            }
+
+            & .icons {
+                margin-right: 10px;
+            }
+        }
+
+        & .linkedinGitHub {
+            margin-top: 10px;
+
+            p {
+                margin: 0 5px;
+                cursor: pointer;
+                font-size: 14px;
+            }
+
+            width: 90%;
+            padding: 1rem;
+            border: 1px solid $colorRosa;
+            border-radius: 20px;
+
+            & span {
+                padding: 0 5px;
+                cursor: pointer;
+            }
+        }
+
+        & a:hover,
+        a:visited,
+        a:link,
+        a:active {
+            text-decoration: none;
+        }
+
+        & .curriculum {
+            padding: 5px;
+            background-color: $colorRosa;
+            border-radius: 16px;
+            display: flex;
+            justify-content: center;
+            width: 90%;
+            margin-top: 10px;
+            align-items: center;
+
+            & p {
+                margin: 0;
+                padding-left: 5px;
+            }
+        }
+    }
+}

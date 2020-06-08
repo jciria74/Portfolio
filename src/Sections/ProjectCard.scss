@@ -1,0 +1,101 @@
+$colorRosa: #F73554;
+
+.ProjectCard {
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 1rem 2rem;
+    margin-bottom: 30px;
+
+    & .titleAndtecno {
+        & .title {
+            color: white;
+            font-weight: bolder;
+            font-size: 20px;
+            font-family: 'Lato',
+                sans-serif;
+
+            @media screen and(max-width: '991px') {
+                padding: 5px 0 15px 20px;
+            }
+        }
+
+        & .colLogos {
+            padding: 0 20px;
+
+            & .imgLogo {
+                width: 30px;
+                height: 30px;
+                margin: 0 5px;
+
+                @media screen and(max-width:'767px') {
+                    width: 22px;
+                    height: 22px;
+                }
+            }
+        }
+    }
+
+    & .photoAndDescription {
+        min-height: 20rem;
+        padding: 1rem 1rem 1rem 0;
+
+        & .photo {
+            min-height: 13rem;
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 0 20px 20px 0;
+        }
+
+        & .text {
+            padding-left: 46px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            @media screen and (max-width:'426px') {
+                padding-left: 15px;
+            }
+
+            & .row {
+                margin: 0;
+                font-size: 14px;
+            }
+
+            & .description {
+                margin-top: 10px;
+                font-size: 14px;
+
+                & p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    & .hr {
+        height: 1px;
+        background-color: $colorRosa;
+        width: 80%;
+    }
+
+    & .links {
+        & .eachLink {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 8px 0;
+
+            & span {
+                margin: 0 13px;
+                cursor: pointer;
+            }
+
+            & p {
+                margin: 0;
+                cursor: pointer;
+            }
+        }
+    }
+}

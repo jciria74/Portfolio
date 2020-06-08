@@ -1,0 +1,64 @@
+$colorMorado: #1E1131;
+$colorRosa: #F73554;
+
+.App {
+  background-color: $colorMorado;
+
+  & #contacting {
+    width: 100vw;
+    opacity: 0.3;
+    position: absolute;
+    bottom: -119rem;
+  }
+
+  & .sections {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+  }
+
+  & p {
+    color: white;
+    font-family: 'Roboto',
+      sans-serif;
+  }
+
+  & .justifyCenter {
+    display: flex;
+    justify-content: center;
+  }
+
+  & .alignCenter {
+    display: flex;
+    align-items: center;
+  }
+
+  & .backgroundUpperMenu {
+        background-color: #1E1131;
+        position: fixed;
+        width: 100%;
+        top: 0px;
+        z-index: 2;
+        margin-left: -15px;
+        padding: 1rem 0.5rem;
+        
+
+    & .upperMenu {
+      margin: 0 1rem;
+
+      @media screen and (min-width: 427px) and (max-width: 900px) {
+        margin: 0 6rem;
+      }
+
+      @media screen and (min-width: 901px) {
+        margin: 0 17rem;
+      }
+
+      & p {
+        margin-bottom: 2px;
+      }
+    }
+
+  }
+}
