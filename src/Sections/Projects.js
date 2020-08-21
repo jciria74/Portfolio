@@ -66,6 +66,42 @@ const Projects = () => {
                     gitHubLink={'https://github.com/LaVanguardia/LaVanguardia-Fullstack'}
                     projectLink={'https://amazing-agnesi-bd2892.netlify.app'}
                 />
+                {/* ----------------- PanicFridge ---------------------*/}
+                <ProjectCard
+                    tecnologies={[iconReact, iconJavaScript, iconBootstrap, iconGit, iconHtml, iconSass, iconCss, trello, iconFontAwesome, iconAdobeIllustrator, iconGitHub, iconFigma]}
+                    title={getText(state.language, 'PanicFridgeTitle')}
+                    description={
+                        <p>
+                            {getText(state.language, 'PanicFridge1')}
+                            <span className='textoDestacado'>{getText(state.language, 'PanicFridge2')}</span>
+                            <img className="imgLogo" src={iconReact} alt={`iconReact`} style={{ height: '16px', margin: '0 4px 2px 4px' }} />
+                            {getText(state.language, 'PanicFridge3')}
+                            <span className='textoDestacado'>{getText(state.language, 'PanicFridge4')}</span>
+                        </p>
+                    }
+                    img={PanicFridge}
+                    gitHubLink={'https://github.com/PanicFridge/panic_fridge'}
+                    projectLink={'https://panicfridge.netlify.app/'}
+                />
+                {/* ----------------- La Pajita startup ---------------------*/}
+                <ProjectCard
+                    tecnologies={[iconReact, iconJavaScript, iconNodeJs, iconMySql, iconBootstrap, iconGit, iconHtml, iconSass, iconCss, trello, iconFontAwesome, iconAdobeIllustrator, iconGitHub, iconFigma, iconAdobeXd]}
+                    title={getText(state.language, 'LaPajitaTitle')}
+                    description={
+                        <p>
+                            {getText(state.language, 'LaPajita1')}
+                            <span className='textoDestacado'>{getText(state.language, 'LaPajita2')}</span>
+                            <img className="imgLogo" src={iconReact} alt={`iconReact`} style={{ height: '16px', margin: '0 4px 2px 4px' }} />
+                            {getText(state.language, 'LaPajita3')}
+                            <span className='textoDestacado'>{getText(state.language, 'LaPajita4')}</span>
+                            <img className="imgLogo" src={iconNodeJs} alt={`iconNodeJs`} style={{ height: '32px', margin: '0 4px 2px 4px' }} />
+                            {getText(state.language, 'LaPajita5')}
+                        </p>
+                    }
+                    img={LaPajita}
+                    gitHubLink={'https://github.com/LaPajita'}
+                    projectLink={'https://lapajita-waiting-list.netlify.app/'}
+                />
                 {/* ----------------- Nonograma ---------------------*/}
                 <ProjectCard
                     tecnologies={[iconReact, iconJavaScript, iconBootstrap, iconGit, iconHtml, iconSass, iconCss, iconFontAwesome, iconAdobeIllustrator, iconGitHub]}
@@ -103,42 +139,6 @@ const Projects = () => {
                     gitHubLink={'https://github.com/wcsGames/oneToFifty'}
                     projectLink={'https://onetofifty.netlify.app'}
                 />
-                {/* ----------------- PanicFridge ---------------------*/}
-                <ProjectCard
-                    tecnologies={[iconReact, iconJavaScript, iconBootstrap, iconGit, iconHtml, iconSass, iconCss, trello, iconFontAwesome, iconAdobeIllustrator, iconGitHub, iconFigma]}
-                    title={getText(state.language, 'PanicFridgeTitle')}
-                    description={
-                        <p>
-                            {getText(state.language, 'PanicFridge1')}
-                            <span className='textoDestacado'>{getText(state.language, 'PanicFridge2')}</span>
-                            <img className="imgLogo" src={iconReact} alt={`iconReact`} style={{ height: '16px', margin: '0 4px 2px 4px' }} />
-                            {getText(state.language, 'PanicFridge3')}
-                            <span className='textoDestacado'>{getText(state.language, 'PanicFridge4')}</span>
-                        </p>
-                    }
-                    img={PanicFridge}
-                    gitHubLink={'https://github.com/PanicFridge/panic_fridge'}
-                    projectLink={'https://panicfridge.netlify.app/'}
-                />
-                {/* ----------------- La Pajita startup ---------------------*/}
-                <ProjectCard
-                    tecnologies={[iconReact, iconJavaScript, iconNodeJs, iconMySql, iconBootstrap, iconGit, iconHtml, iconSass, iconCss, trello, iconFontAwesome, iconAdobeIllustrator, iconGitHub, iconFigma, iconAdobeXd]}
-                    title={getText(state.language, 'LaPajitaTitle')}
-                    description={
-                        <p>
-                            {getText(state.language, 'LaPajita1')}
-                            <span className='textoDestacado'>{getText(state.language, 'LaPajita2')}</span>
-                            <img className="imgLogo" src={iconReact} alt={`iconReact`} style={{ height: '16px', margin: '0 4px 2px 4px' }} />
-                            {getText(state.language, 'LaPajita3')}
-                            <span className='textoDestacado'>{getText(state.language, 'LaPajita4')}</span>
-                            <img className="imgLogo" src={iconNodeJs} alt={`iconNodeJs`} style={{ height: '32px', margin: '0 4px 2px 4px' }} />
-                            {getText(state.language, 'LaPajita5')}
-                        </p>
-                    }
-                    img={LaPajita}
-                    gitHubLink={'https://github.com/LaPajita'}
-                    projectLink={'https://lapajita-waiting-list.netlify.app/'}
-                />
                 {/* ----------------- MasterMind Quizz ---------------------*/}
                 <ProjectCard
                     tecnologies={[iconJavaScript, iconBootstrap, iconGit, iconHtml, iconSass, iconCss, trello, iconAdobeIllustrator, iconGitHub, iconAdobeXd, iconPhotoshop]}
@@ -159,7 +159,6 @@ const Projects = () => {
                     gitHubLink={'https://github.com/mastermindQuiz'}
                     projectLink={'https://mastermind-wcs.netlify.app/'}
                 />
-
                 {/* ----------------- OpenTrivia ---------------------*/}
                 <ProjectCard
                     tecnologies={[iconReact, iconJavaScript, iconBootstrap, iconGit, iconHtml, iconSass, iconCss, iconFontAwesome, iconAdobeIllustrator, iconGitHub, iconFigma]}
