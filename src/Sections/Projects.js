@@ -102,6 +102,24 @@ const Projects = () => {
                     gitHubLink={'https://github.com/LaPajita'}
                     projectLink={'https://lapajita-waiting-list.netlify.app/'}
                 />
+                {/* ----------------- OneToFifty ---------------------*/}
+                <ProjectCard
+                    tecnologies={[iconReact, iconJavaScript, iconBootstrap, iconGit, iconHtml, iconSass, iconCss, iconFontAwesome, iconAdobeIllustrator, iconGitHub]}
+                    title={getText(state.language, 'OneToFiftyTitle')}
+                    description={
+                        <p>
+                            {getText(state.language, 'OneToFifty1')}
+                            <span className='textoDestacado'>{getText(state.language, 'OneToFifty2')} </span>
+                            <img className="imgLogo" src={iconReact} alt={`iconReact`} style={{ height: '16px', margin: '0 4px 2px 4px' }} />
+                            {getText(state.language, 'OneToFifty3')}
+                            <span className='textoDestacado'>{getText(state.language, 'OneToFifty4')} </span>
+                            {getText(state.language, 'OneToFifty5')}
+                        </p>
+                    }
+                    img={OneToFifty}
+                    gitHubLink={'https://github.com/wcsGames/oneToFifty'}
+                    projectLink={'https://onetofifty.netlify.app'}
+                />
                 {/* ----------------- Nonograma ---------------------*/}
                 <ProjectCard
                     tecnologies={[iconReact, iconJavaScript, iconBootstrap, iconGit, iconHtml, iconSass, iconCss, iconFontAwesome, iconAdobeIllustrator, iconGitHub]}
@@ -120,24 +138,6 @@ const Projects = () => {
                     img={Nonogram}
                     gitHubLink={'https://github.com/wcsGames/nonograma'}
                     projectLink={'https://nonogram-game.netlify.app'}
-                />
-                {/* ----------------- OneToFifty ---------------------*/}
-                <ProjectCard
-                    tecnologies={[iconReact, iconJavaScript, iconBootstrap, iconGit, iconHtml, iconSass, iconCss, iconFontAwesome, iconAdobeIllustrator, iconGitHub]}
-                    title={getText(state.language, 'OneToFiftyTitle')}
-                    description={
-                        <p>
-                            {getText(state.language, 'OneToFifty1')}
-                            <span className='textoDestacado'>{getText(state.language, 'OneToFifty2')} </span>
-                            <img className="imgLogo" src={iconReact} alt={`iconReact`} style={{ height: '16px', margin: '0 4px 2px 4px' }} />
-                            {getText(state.language, 'OneToFifty3')}
-                            <span className='textoDestacado'>{getText(state.language, 'OneToFifty4')} </span>
-                            {getText(state.language, 'OneToFifty5')}
-                        </p>
-                    }
-                    img={OneToFifty}
-                    gitHubLink={'https://github.com/wcsGames/oneToFifty'}
-                    projectLink={'https://onetofifty.netlify.app'}
                 />
                 {/* ----------------- MasterMind Quizz ---------------------*/}
                 <ProjectCard
