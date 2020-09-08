@@ -47,11 +47,11 @@ function App() {
 
   return (
     <MyContext.Provider value={allContext}>
-      <div div className="App" >
+      <div className="App" >
         <div className="container-fluid">
           
           <div className="backgroundUpperMenu">
-            <div div className="upperMenu justifyCenter" >
+            <div className="upperMenu justifyCenter" >
               <UpperMenu />
             </div>
           </div>
@@ -61,7 +61,7 @@ function App() {
               <div className="col-sm-1 justifyCenter">
                 <SideMenu />
               </div>
-              <div div className="col-12 col-sm-11" >
+              <div className="col-12 col-sm-11" >
                 {/* Secciones a las que hacer scroll */}
                 <div id="home" className="sections">
                   <Home />

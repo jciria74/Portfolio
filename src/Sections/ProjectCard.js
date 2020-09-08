@@ -24,7 +24,7 @@ const ProjectCard = (props) => {
             <div className="row titleAndtecno">
                 <div className="col-12 col-lg-4 title">{props.title}</div>
                 <div className="col-12 col-lg-8 colLogos">
-                    {tecnologies.map(tec => <img className="imgLogo" src={tec} alt={`${tec}`} />)}
+                    {tecnologies.map((tec, index) => <img className="imgLogo" key={index} src={tec} alt={`${tec}`} />)}
                 </div>
             </div>
             <div className="row photoAndDescription">

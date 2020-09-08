@@ -45,7 +45,7 @@ const Contact = () => {
     return (
         <div className="Contact container-fluid">
             <div className="row justifyCenter alignCenter ">
-                <div div className="col-12 col-md-5 fotoContainer justifyCenter">
+                <div className="col-12 col-md-5 fotoContainer justifyCenter">
                     <img className="foto" src={imgPortrait} alt="portrait" />
                 </div>
                 <div className="col-12 col-md-7 info">
