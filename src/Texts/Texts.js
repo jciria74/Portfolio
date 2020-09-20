@@ -20,7 +20,7 @@ const Texts = {
         OneToFifty4: '#La Vanguardia ',
         OneToFifty5: 'de Barcelona. Sé el más rápido en completar la secuencia desde el 1 hasta el 50. ¡Cada milésima cuenta!',
         LaVanguardiaTitle: 'Seccion de entretenimiento de La Vanguardia',
-        LaVanguardia1: 'Seccion de juegos realizada para el peródico de ',
+        LaVanguardia1: 'Seccion de juegos realizada para el periódico de ',
         LaVanguardia2: '#La Vanguardia ',
         LaVanguardia3: 'desarrollada en tres meses con ',
         LaVanguardia4: '#React ',
