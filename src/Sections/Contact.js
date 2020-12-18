@@ -28,12 +28,6 @@ const Contact = () => {
         setInterval(() => {
             document.getElementById('resetButton').click()
         }, 19000)
-
-        //Get random color every sec
-        //     setInterval(() => {
-        //         const color = "#" + ((1 << 24) * Math.random() | 0).toString(16);
-        //         document.getElementById('changeColor').style.backgroundColor = color;
-        //     }, 3000)
     }, [])
 
     //Abrir link en new window
@@ -81,7 +75,6 @@ const Contact = () => {
                             {Icons.iconCurriculum}<p>{getText(state.language, 'ContactCV')}</p>
                         </div>
                     </a>
-                    {/* <div className="row" id='changeColor' style={{ height: '30px', width: '30px' }}>dd</div> */}
                 </div>
             </div>
         </div>
